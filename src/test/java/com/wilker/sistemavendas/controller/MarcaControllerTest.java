@@ -1,5 +1,6 @@
 package com.wilker.sistemavendas.controller;
 
+import com.wilker.sistemavendas.DTO.UsuarioDTO;
 import com.wilker.sistemavendas.entity.Usuario;
 import com.wilker.sistemavendas.DTO.AutenticacaoDTO;
 import com.wilker.sistemavendas.form.AutenticacaoForm;
@@ -22,7 +23,7 @@ public class MarcaControllerTest {
     private AutenticacaoController autenticacaoController;
 
     private HttpHeaders headers;
-    private Usuario usuario;
+    private UsuarioDTO usuario;
 
     @BeforeAll
     public void start(){

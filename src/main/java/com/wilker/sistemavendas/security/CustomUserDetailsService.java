@@ -1,6 +1,7 @@
 package com.wilker.sistemavendas.security;
 
 import com.wilker.sistemavendas.DTO.AutenticacaoDTO;
+import com.wilker.sistemavendas.DTO.UsuarioDTO;
 import com.wilker.sistemavendas.entity.Usuario;
 import com.wilker.sistemavendas.exception.errors.NotFoundException;
 import com.wilker.sistemavendas.exception.errors.UnauthorizedException;
@@ -58,7 +59,8 @@ public class CustomUserDetailsService implements UserDetailsService {
         Usuario usuario = usuarioRepository.findByEmail(email).get();
 
         AutenticacaoDTO dto = new AutenticacaoDTO();
-        dto.setUsuario(usuario);
+
+        dto.setUsuario(new UsuarioDTO(usuario.getId(), usuario.getNome(), usuario.getEmail(), usuario.getTipo()));
         dto.setToken(tokenService.gerarToken(usuario));
 
         return dto;

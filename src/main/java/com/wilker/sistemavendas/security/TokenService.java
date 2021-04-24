@@ -10,8 +10,8 @@ import java.util.Date;
 
 @Service
 public class TokenService {
-    private Long EXPIRATION = 86400000L;
-    private String SECRET = "89619b5d31f1f70e719a9740ed5e82d647414ee880ff059e219c2172889307354ec4824cf6eb96058c61f6cbd03cbeabef264ea7dc9ce60b270c40e0632397cb";
+    private final Long EXPIRATION = 86400000L;
+    private final String SECRET = "89619b5d31f1f70e719a9740ed5e82d647414ee880ff059e219c2172889307354ec4824cf6eb96058c61f6cbd03cbeabef264ea7dc9ce60b270c40e0632397cb";
 
     public String gerarToken(Usuario usuario) {
         Date hoje = new Date();
