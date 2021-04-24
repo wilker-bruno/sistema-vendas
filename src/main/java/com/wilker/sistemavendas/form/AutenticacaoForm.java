@@ -1,4 +1,4 @@
-package com.wilker.sistemavendas.security.autenticacao;
+package com.wilker.sistemavendas.form;
 
 import lombok.Data;
 

@@ -1,4 +1,4 @@
-package com.wilker.sistemavendas.security.autenticacao;
+package com.wilker.sistemavendas.DTO;
 
 import com.wilker.sistemavendas.entity.Usuario;
 import lombok.Data;

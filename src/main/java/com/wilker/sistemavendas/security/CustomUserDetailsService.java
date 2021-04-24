@@ -1,8 +1,10 @@
-package com.wilker.sistemavendas.security.autenticacao;
+package com.wilker.sistemavendas.security;
 
+import com.wilker.sistemavendas.DTO.AutenticacaoDTO;
 import com.wilker.sistemavendas.entity.Usuario;
 import com.wilker.sistemavendas.exception.errors.NotFoundException;
 import com.wilker.sistemavendas.exception.errors.UnauthorizedException;
+import com.wilker.sistemavendas.form.AutenticacaoForm;
 import com.wilker.sistemavendas.repository.UsuarioRepository;
 import com.wilker.sistemavendas.security.TokenService;
 import org.springframework.context.annotation.Lazy;
@@ -15,13 +17,13 @@ import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
 
 @Service
-public class AutenticacaoServiceImpl implements UserDetailsService {
+public class CustomUserDetailsService implements UserDetailsService {
     private TokenService tokenService;
     private UsuarioRepository usuarioRepository;
     private AuthenticationManager authenticationManager;
 
-    private AutenticacaoServiceImpl(UsuarioRepository usuarioRepository,
-                                    TokenService tokenService, @Lazy AuthenticationManager authenticationManager) {
+    private CustomUserDetailsService(UsuarioRepository usuarioRepository,
+                                     TokenService tokenService, @Lazy AuthenticationManager authenticationManager) {
         this.usuarioRepository = usuarioRepository;
         this.tokenService = tokenService;
         this.authenticationManager = authenticationManager;

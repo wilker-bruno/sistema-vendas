@@ -5,7 +5,7 @@ import com.wilker.sistemavendas.entity.Usuario;
 import com.wilker.sistemavendas.exception.errors.NotFoundException;
 import com.wilker.sistemavendas.exception.errors.BadRequestException;
 import com.wilker.sistemavendas.repository.MarcaRepository;
-import com.wilker.sistemavendas.security.autenticacao.AutenticacaoServiceImpl;
+import com.wilker.sistemavendas.security.CustomUserDetailsService;
 import com.wilker.sistemavendas.service.MarcaService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.data.domain.Page;
@@ -19,7 +19,7 @@ import java.util.Optional;
 @RequiredArgsConstructor
 public class MarcaServiceimpl implements MarcaService {
     private final MarcaRepository marcaRepository;
-    private final AutenticacaoServiceImpl autenticacaoService;
+    private final CustomUserDetailsService autenticacaoService;
 
     @Override
     public Marca salvar(Marca marca) {

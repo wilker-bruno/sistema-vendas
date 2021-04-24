@@ -2,8 +2,6 @@ package com.wilker.sistemavendas.security;
 
 import com.wilker.sistemavendas.exception.CustomAuthenticationEntryPoint;
 import com.wilker.sistemavendas.repository.UsuarioRepository;
-import com.wilker.sistemavendas.security.autenticacao.AutenticacaoFilter;
-import com.wilker.sistemavendas.security.autenticacao.AutenticacaoServiceImpl;
 import lombok.RequiredArgsConstructor;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -24,7 +22,7 @@ import org.springframework.security.web.authentication.UsernamePasswordAuthentic
 public class SecurityConfig extends WebSecurityConfigurerAdapter {
     private final TokenService tokenService;
     private final UsuarioRepository usuarioRepository;
-    private final AutenticacaoServiceImpl autenticacaoService;
+    private final CustomUserDetailsService autenticacaoService;
 
     @Override
     @Bean
@@ -48,7 +46,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 .exceptionHandling().authenticationEntryPoint(authenticationEntryPoint())
                 .and()
                 .sessionManagement().sessionCreationPolicy(SessionCreationPolicy.STATELESS)
-                .and().addFilterBefore(new AutenticacaoFilter(tokenService, usuarioRepository), UsernamePasswordAuthenticationFilter.class);
+                .and().addFilterBefore(new SecurityFilter(tokenService, usuarioRepository), UsernamePasswordAuthenticationFilter.class);
     }
 
     @Bean

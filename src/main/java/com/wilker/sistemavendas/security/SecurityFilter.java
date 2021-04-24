@@ -1,4 +1,4 @@
-package com.wilker.sistemavendas.security.autenticacao;
+package com.wilker.sistemavendas.security;
 
 import com.wilker.sistemavendas.entity.Usuario;
 import com.wilker.sistemavendas.repository.UsuarioRepository;
@@ -15,7 +15,7 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
 @RequiredArgsConstructor
-public class AutenticacaoFilter extends OncePerRequestFilter {
+public class SecurityFilter extends OncePerRequestFilter {
     private final TokenService tokenService;
     private final UsuarioRepository usuarioRepository;
 

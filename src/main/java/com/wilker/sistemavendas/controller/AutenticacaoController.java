@@ -1,9 +1,9 @@
 package com.wilker.sistemavendas.controller;
 
 import com.wilker.sistemavendas.entity.Usuario;
-import com.wilker.sistemavendas.security.autenticacao.AutenticacaoDTO;
-import com.wilker.sistemavendas.security.autenticacao.AutenticacaoForm;
-import com.wilker.sistemavendas.security.autenticacao.AutenticacaoServiceImpl;
+import com.wilker.sistemavendas.DTO.AutenticacaoDTO;
+import com.wilker.sistemavendas.form.AutenticacaoForm;
+import com.wilker.sistemavendas.security.CustomUserDetailsService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.*;
 @RequestMapping("/api/autenticacao")
 public class AutenticacaoController {
     @Autowired
-    private AutenticacaoServiceImpl autenticacaoService;
+    private CustomUserDetailsService autenticacaoService;
 
     @PostMapping
     @ResponseStatus(HttpStatus.OK)

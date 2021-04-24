@@ -1,8 +1,8 @@
 package com.wilker.sistemavendas.controller;
 
 import com.wilker.sistemavendas.entity.Usuario;
-import com.wilker.sistemavendas.security.autenticacao.AutenticacaoDTO;
-import com.wilker.sistemavendas.security.autenticacao.AutenticacaoForm;
+import com.wilker.sistemavendas.DTO.AutenticacaoDTO;
+import com.wilker.sistemavendas.form.AutenticacaoForm;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
