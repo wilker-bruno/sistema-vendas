@@ -1,13 +1,12 @@
 package com.wilker.sistemavendas.security;
 
-import com.wilker.sistemavendas.DTO.AutenticacaoDTO;
-import com.wilker.sistemavendas.DTO.UsuarioDTO;
+import com.wilker.sistemavendas.dto.AutenticacaoDTO;
+import com.wilker.sistemavendas.dto.UsuarioDTO;
 import com.wilker.sistemavendas.entity.Usuario;
 import com.wilker.sistemavendas.exception.errors.NotFoundException;
 import com.wilker.sistemavendas.exception.errors.UnauthorizedException;
 import com.wilker.sistemavendas.form.AutenticacaoForm;
 import com.wilker.sistemavendas.repository.UsuarioRepository;
-import com.wilker.sistemavendas.security.TokenService;
 import org.springframework.context.annotation.Lazy;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;

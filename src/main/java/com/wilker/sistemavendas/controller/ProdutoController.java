@@ -1,6 +1,6 @@
 package com.wilker.sistemavendas.controller;
 
-import com.wilker.sistemavendas.DTO.ProdutoDTO;
+import com.wilker.sistemavendas.dto.ProdutoDTO;
 import com.wilker.sistemavendas.entity.Produto;
 import com.wilker.sistemavendas.service.ProdutoService;
 import org.springframework.beans.factory.annotation.Autowired;

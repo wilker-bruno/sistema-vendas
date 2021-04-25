@@ -1,6 +1,6 @@
 package com.wilker.sistemavendas.controller;
 
-import com.wilker.sistemavendas.DTO.PedidoDTO;
+import com.wilker.sistemavendas.dto.PedidoDTO;
 import com.wilker.sistemavendas.entity.Pedido;
 import com.wilker.sistemavendas.service.PedidoService;
 import org.springframework.beans.factory.annotation.Autowired;

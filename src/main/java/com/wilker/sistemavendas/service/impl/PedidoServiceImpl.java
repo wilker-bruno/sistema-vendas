@@ -1,7 +1,7 @@
 package com.wilker.sistemavendas.service.impl;
 
-import com.wilker.sistemavendas.DTO.ItemPedidoDTO;
-import com.wilker.sistemavendas.DTO.PedidoDTO;
+import com.wilker.sistemavendas.dto.ItemPedidoDTO;
+import com.wilker.sistemavendas.dto.PedidoDTO;
 import com.wilker.sistemavendas.entity.ItemPedido;
 import com.wilker.sistemavendas.entity.Pedido;
 import com.wilker.sistemavendas.entity.Produto;

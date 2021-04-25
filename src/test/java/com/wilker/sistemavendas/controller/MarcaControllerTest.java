@@ -1,8 +1,8 @@
 package com.wilker.sistemavendas.controller;
 
 import com.github.javafaker.Faker;
-import com.wilker.sistemavendas.DTO.AutenticacaoDTO;
-import com.wilker.sistemavendas.DTO.UsuarioDTO;
+import com.wilker.sistemavendas.dto.AutenticacaoDTO;
+import com.wilker.sistemavendas.dto.UsuarioDTO;
 import com.wilker.sistemavendas.entity.Usuario;
 import com.wilker.sistemavendas.entity.enuns.UsuarioEnum;
 import com.wilker.sistemavendas.exception.ErrorDetail;

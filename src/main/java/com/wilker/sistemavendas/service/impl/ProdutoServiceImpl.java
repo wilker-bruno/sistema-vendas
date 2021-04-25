@@ -1,6 +1,6 @@
 package com.wilker.sistemavendas.service.impl;
 
-import com.wilker.sistemavendas.DTO.ProdutoDTO;
+import com.wilker.sistemavendas.dto.ProdutoDTO;
 import com.wilker.sistemavendas.entity.Categoria;
 import com.wilker.sistemavendas.entity.Marca;
 import com.wilker.sistemavendas.entity.Produto;

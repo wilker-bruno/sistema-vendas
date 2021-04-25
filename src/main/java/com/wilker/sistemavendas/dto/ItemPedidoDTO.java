@@ -1,4 +1,4 @@
-package com.wilker.sistemavendas.DTO;
+package com.wilker.sistemavendas.dto;
 
 import lombok.Getter;
 import lombok.Setter;

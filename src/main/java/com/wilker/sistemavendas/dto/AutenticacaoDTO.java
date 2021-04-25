@@ -1,6 +1,5 @@
-package com.wilker.sistemavendas.DTO;
+package com.wilker.sistemavendas.dto;
 
-import com.wilker.sistemavendas.entity.Usuario;
 import lombok.Data;
 
 @Data

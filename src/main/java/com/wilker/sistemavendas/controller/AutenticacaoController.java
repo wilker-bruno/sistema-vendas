@@ -1,7 +1,7 @@
 package com.wilker.sistemavendas.controller;
 
 import com.wilker.sistemavendas.entity.Usuario;
-import com.wilker.sistemavendas.DTO.AutenticacaoDTO;
+import com.wilker.sistemavendas.dto.AutenticacaoDTO;
 import com.wilker.sistemavendas.form.AutenticacaoForm;
 import com.wilker.sistemavendas.security.CustomUserDetailsService;
 import org.springframework.beans.factory.annotation.Autowired;

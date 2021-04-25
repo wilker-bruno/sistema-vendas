@@ -1,6 +1,6 @@
 package com.wilker.sistemavendas.service;
 
-import com.wilker.sistemavendas.DTO.ProdutoDTO;
+import com.wilker.sistemavendas.dto.ProdutoDTO;
 import com.wilker.sistemavendas.entity.Produto;
 import org.springframework.data.domain.Page;
 
